@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+/* Mobile size screen */
+
+@media screen and (max-width: 428px) {
+
+    * {
+      margin: 0;
+    }
+
+    body {
+      background-color: pink;
+      display: grid;
+      place-items: center;
+      height: 100vh;
+    }
+
+    label, input {
+      display: block;
+    }
+
+    #emailField input, #passwordField input {
+      width: 100%;
+    }
+
+    .brand-name {
+      font-size: 18px;
+      color: white;
+      font-family: 'Crete Round', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container label, .form-container input{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  
+  
+} 

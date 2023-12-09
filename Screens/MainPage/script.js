@@ -1,5 +1,5 @@
 // nombre de usuario en variable
-var userName = "UsuarioEjemplo";
+var userName = "Norma Sánchez";
 
 // referencia del div con id "welcomeMessage"
 var welcomeElement = document.getElementById("welcomeMessage");

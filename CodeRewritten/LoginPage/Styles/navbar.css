@@ -1,0 +1,31 @@
+@media screen and (max-width: 428px) {
+
+nav {
+    width: 100%;
+}
+
+nav .container {
+    height:60px;
+    width: 100%;
+    display: flex;
+    background-color: #648064;
+    justify-content: center;
+    align-items: center;
+    top: 0; /* Coloca la barra de navegación en la parte superior */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+nav .container h1 {
+    font-family: 'Roboto Slab', serif;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    margin: 0;
+}
+
+nav .container i {
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+}

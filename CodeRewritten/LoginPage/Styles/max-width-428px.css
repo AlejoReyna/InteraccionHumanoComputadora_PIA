@@ -1,4 +1,5 @@
 @media screen and (max-width: 428px) {
+
     body {
         display: grid;
         place-items: center;
@@ -27,12 +28,14 @@
         display: flex;
     }
 
-    .emailField, .passwordField {
+    .usernameField, .passwordField {
         font-size: 18px;
-      }
+    }
     
+    .usernameField input,
+    .passwordField input,
     .emailField input,
-    .passwordField input {
+    .repeatPasswordField input {
         display: flex;
         width: 100%;
         border: 1px solid black;
@@ -55,7 +58,7 @@
         text-align: center;
     }
 
-    #buttonSend {
+    #buttonSend, #registerButton {
         margin: 10px auto; /** LMAO this align the button **/
         background-color: #97b997;
         border: 0;

@@ -30,11 +30,11 @@
                 <div class="formContainer">
                     <form class="login" action="#" id="loginForm">
 
-                        <div class="emailField">
-                            <label for="email">
-                                Correo Electrónico
+                        <div class="usernameField">
+                            <label for="username">
+                                Nombre de usuario
                             </label>
-                            <input type="email" id="username" name="username">
+                            <input type="username" id="username" name="username">
                         </div>
 
                         <div class="passwordField">
@@ -45,7 +45,7 @@
                         <input type="submit" value="Ingresar" id="buttonSend">
                         
                         <div class="notRegisteredActivator">
-                            <p> ¿No estás registrado aún? <span id="notRegisterd"> ¡Registrate! </span></p>
+                            <p> ¿No estás registrado aún? <span> <a href="" id="changeButton"> ¡Registrate! </a> </span></p>
                         </div>
                     </form>
                 </div>
@@ -56,6 +56,8 @@
     </main>
 
     <script src="https://kit.fontawesome.com/d6b454d5de.js" crossorigin="anonymous"></script>
+    <script src="Scripts/scripts.js"></script>
+    <script src="../../Database/database.js"></script>
     
 </body>
 </html>

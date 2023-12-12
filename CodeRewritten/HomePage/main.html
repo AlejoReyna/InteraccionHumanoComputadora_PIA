@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/max-width-420px.css">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="../LoginPage/Styles/navbar.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <i class="fa-solid fa-bars"></i>
+            <h1 id="brandName"> La cafetería del oso </h1>
+        </div>
+    </nav>
+    
+    <main> 
+        <div class="quickSearch">
+            <span class="message">
+                <p> ¿Qué se te anoja comer hoy? </p>
+            </span>
+                <!-- Search bar -->
+            <div class="searchContainer">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchbar" placeholder="Búsqueda rápida" onkeyup="filterFunction()">
+                <div id="dropdown" class="dropdown-content">
+                    <a href="#"> Opción 1 </a>
+                    <a href="#"> Opción 2 </a>
+                    <a href="#"> Opción 3 </a>
+                </div>
+            </div>
+                <!-- Search bar -->
+        </div>
+    </main>
+    
+    <script src="https://kit.fontawesome.com/d6b454d5de.js" crossorigin="anonymous"></script>
+    <script src="Scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@media screen and (max-width: 428px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: grid;   
+    }
+
+    .top-container {
+        display: flex;
+        width: 100%;
+        background-color: #93b593;
+        height: 30vh; 
+        justify-content: center;  
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .top-container .searchBarContainer input {
+        width: 100%;
+    }
+    
+
+    .top-container h6 {
+        color: rgb(34, 114, 5);
+        font-family: 'Figtree', sans-serif;
+        font-size: 28px;
+    }
+
+
+
+    /* Content under 'lacajadearriba' */
+
+
+
+
+   
+}

@@ -6,13 +6,22 @@
     <title> La cafetería del oso </title>
     <link rel="stylesheet" href="Styles/max-width-428px.css">
     <link rel="stylesheet" href="Styles/navbar.css">
-    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/Fonts.css">
+    <link rel="stylesheet" href="Styles/dropdownMenu.css">
+
 </head>
 <body>
     
     <nav>
-        <div class="container">
-            <i class="fa-solid fa-bars"></i>
+        <div class="container"> <!-- change to menu-container -->
+            <i id="menuIcon" class="fa-solid fa-bars"></i>
+            <div id="dropdown-menu" class="dropdown-menu">
+                <ul>
+                    <li> <i id="backPage" class="fa-solid fa-arrow-left"></i> </li>
+                    <li> <a href="#"> Mi perfil </a> </li>
+                    <li> <a href="#"> Acerca de </a> </li>
+                </ul>
+            </div>
             <h1 id="brandName"> La cafetería del oso </h1>
         </div>
     </nav>
@@ -57,7 +66,6 @@
 
     <script src="https://kit.fontawesome.com/d6b454d5de.js" crossorigin="anonymous"></script>
     <script src="Scripts/scripts.js"></script>
-    <script src="../../Database/database.js"></script>
     
 </body>
 </html>

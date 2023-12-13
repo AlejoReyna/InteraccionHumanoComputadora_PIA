@@ -1,7 +1,7 @@
 // This function changes the form, from LogIn to SignUp
 
 document.addEventListener('DOMContentLoaded', function() {
-    
+
     const loginForm = document.getElementById('loginForm');
     const registerForm = document.createElement('form');
     registerForm.id = 'registeForm';
@@ -23,11 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
     passwordField.innerHTML = '<label for="password"> Contraseña </label> <input type="password" id="password" name="password">';
 
     //Create repeatPassword input
-    /** 
+  
     const repeatPasswordField = document.createElement('div');
     repeatPasswordField.className = 'repeatPasswordField';
     repeatPasswordField.innerHTML = '<label for="repeatPassword"> Repetir Contraseña </label> <input type="password" id="password" name="repeatPassword">';
-    **/
+    
 
     // Create registerButton input
     const registerButton = document.createElement('input');
@@ -43,8 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     registerForm.appendChild(usernameField);
     registerForm.appendChild(emailField);
     registerForm.appendChild(passwordField);
-    /** 
-    registerForm.appendChild(repeatPasswordField); */
+    registerForm.appendChild(repeatPasswordField); 
     registerForm.appendChild(registerButton);
     registerForm.appendChild(loginActivator);
 
@@ -70,5 +69,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-export {usernameField, emailField, passwordField};
 
+// Code for the dropdown menu
+
+document.addEventListener('DOMContentLoaded', function() {
+
+document.getElementById('menuIcon').addEventListener('click', function() {
+    var menu = document.getElementById('dropdown-menu');
+    menu.classList.toggle('show-menu');
+  });
+
+document.getElementById('backPage').addEventListener('click', function(){
+    var menu = document.getElementById('dropdown-menu');
+    menu.classList.remove('show-menu');
+})
+});

@@ -4,36 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Styles/max-width-420px.css">
-    <link rel="stylesheet" href="Styles/styles.css">
-    <link rel="stylesheet" href="../LoginPage/Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/max-width-428px.css">
+    <link rel="stylesheet" href="Styles/fonts.css">
+    <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/foodList.css">
+    <link rel="stylesheet" href="Styles/dropdownMenu.css">
+
 </head>
 <body>
 
     <nav>
-        <div class="container">
-            <i class="fa-solid fa-bars"></i>
+        <div class="container"> <!-- change to menu-container -->
+            <i id="menuIcon" class="fa-solid fa-bars"></i>
+            <div id="dropdown-menu" class="dropdown-menu">
+                <ul>
+                    <li> <i id="backPage" class="fa-solid fa-arrow-left"></i> </li>
+                    <li> <a href="#"> Mi perfil </a> </li>
+                    <li> <a href="#"> Acerca de </a> </li>
+                </ul>
+            </div>
             <h1 id="brandName"> La cafetería del oso </h1>
         </div>
     </nav>
     
     <main> 
-        <div class="quickSearch">
-            <span class="message">
-                <p> ¿Qué se te anoja comer hoy? </p>
-            </span>
-                <!-- Search bar -->
-            <div class="searchContainer">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="searchbar" placeholder="Búsqueda rápida" onkeyup="filterFunction()">
-                <div id="dropdown" class="dropdown-content">
-                    <a href="#"> Opción 1 </a>
-                    <a href="#"> Opción 2 </a>
-                    <a href="#"> Opción 3 </a>
+        <div class="top-container" id="cajadearriba">         <!-- REMINDER: Cambiarle el ID a esta línea -->
+            <div class="container"> 
+                <h6 id="welcomeMessage"> ¿Qué se te antoja comer hoy? </h6>
+            </div>
+
+            <div class="searchBarContainer">
+                <input type="text" id="searchbar" placeholder="En búsqueda de algo interesante..." oninput="displayRelated()">
+            </div>
+        </div>
+
+        
+            <div class="foodList">
+                <div class="container-fluid">
+                    <h3> Vendedores listados </h3>
+
+                    <div class="box" id="tacosJulian">
+                        <div class="productInfo">
+                            <div class="text">
+                                <span class="sellerName">
+                                    <h4> Tacos Julián </h4>
+                                </span>
+                                <span class="description">
+                                    <p> Tacos Julián trae lo último en taquitos de carne asada acompañados de 
+                                        su tradicional salsa picosita. 
+                                    </p>
+                                </span>
+                            </div>
+
+                            <div class="brandImage">
+                                <img src="./Images/no-img.jpg">
+                            </div>
+
+                        </div>
+                    </div>
+        
+                    <div class="box" id="cuberoBurguers">
+                        <div class="productInfo">
+                            <div class="text">
+                                <span class="sellerName">
+                                    <h4> Hamburguesas de Cubero </h4>
+                                </span>
+                                <span class="description">
+                                    <p>
+                                        Si se pudiera plasmar el sabor de la FIME en una hamburguesa, sabría como estas hamburguesas.
+                                    </p>
+                                </span>
+                            </div>
+
+                            <div class="brandImage">
+                                <img src="./Images/no-img.jpg">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="box" id="tostadasOaxaca">
+                        <div class="productInfo">
+                            <div class="text">
+                                <span class="sellerName">
+                                    <h4> Tostadas Oaxaqueñas </h4>
+                                </span>
+                                <span class="description">
+                                    <p>
+                                        Elaborado por la asociación oaxaqueña de la FIC.
+                                    </p>
+                                </span>
+                            </div>
+
+                            <div class="brandImage">
+                                <img src="./Images/no-img.jpg">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="box" id="marthaBurgers">
+                        <div class="productInfo">
+                            <div class="text">
+                                <span class="sellerName">
+                                    <h4> Hamburguesas de Martha </h4>
+                                </span>
+                            
+                                <span class="description">
+                                    <p> Hamburguesas al carbón. No encontrarás algo igual en la UANL. Certificado ante notario público. 
+                                    </p>
+                                </span> 
+                            </div>
+                            
+                            <div class="brandImage">
+                                <img src="./Images/no-img.jpg">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="box" id="tacosIntegral">
+                        <div class="productInfo">
+                            <div class="text">
+                                <span class="sellerName">
+                                    <h4> Tacos 'La Integral' </h4>
+                                </span>
+                                <span class="description">
+                                    <p>
+                                        udv=uv -lvdu
+                                    </p>
+                                </span>
+                            </div>
+
+                            <div class="brandImage">
+                                <img src="./Images/no-img.jpg">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-                <!-- Search bar -->
-        </div>
     </main>
     
     <script src="https://kit.fontawesome.com/d6b454d5de.js" crossorigin="anonymous"></script>

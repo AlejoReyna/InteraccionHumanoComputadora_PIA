@@ -48,5 +48,5 @@ app.listen(app.get('port'), () => {
 
 app.get('/', (req, res) => {
     res.render('home');
-})
+});
 

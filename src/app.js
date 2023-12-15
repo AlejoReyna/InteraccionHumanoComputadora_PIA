@@ -16,11 +16,14 @@ const session = require('express-session');
 // Importa el módulo 'body-parser' para analizar el cuerpo de las solicitudes HTTP
 const bodyParser = require('body-parser');
 
+//
+const loginRoutes = require('./routes/login');
+
 // Crea una nueva aplicación Express
 const app = express();
 
 // Configura el puerto en el que se ejecutará la aplicación
-app.set('port', 4000);
+app.set('port', 4001);
 
 // Configura el directorio de las vistas
 app.set('views', __dirname + '/views')
@@ -41,10 +44,27 @@ app.use(bodyParser.urlencoded({
 // Configura la aplicación para usar 'body-parser' para analizar datos JSON
 app.use(bodyParser.json());
 
+app.use(myconnection(mysql, {
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    port: 3306,
+    database: 'nodelogin'
+}));
+
+app.use(session({
+    secret: 'secret',
+    resave: true,
+    saveUninitialized: true
+}));
+
+
 // Inicia el servidor en el puerto especificado
 app.listen(app.get('port'), () => {
     console.log('Listening on port ', app.get('port'));
 });
+
+app.use('/', loginRoutes);
 
 app.get('/', (req, res) => {
     res.render('home');

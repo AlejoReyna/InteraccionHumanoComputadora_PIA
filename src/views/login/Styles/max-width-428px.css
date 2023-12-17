@@ -1,0 +1,82 @@
+@media screen and (max-width: 428px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        display: grid;
+    }
+
+    main .container-fluid {
+        background-image: url('../Images/Background.png');
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+
+    label, input {
+        display: block;
+    }
+
+    .formContainer {
+        text-align: center;
+        font-family: 'Bitter', serif;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .usernameField, .passwordField {
+        font-size: 18px;
+    }
+    
+    .usernameField input,
+    .passwordField input,
+    .emailField input,
+    .repeatPasswordField input {
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .formContainer label,
+    .formContainer input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainMessage {
+        font-size: 20px;
+        color: #bddbc3;
+        font-family: 'Figtree', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #buttonSend, #registerButton {
+        margin: 10px auto; /** LMAO this align the button **/
+        background-color: #97b997;
+        border: 0;
+        width: 100px;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid rgba(54, 106, 54, 0.885);
+    }
+    
+    #registerForm {
+        text-decoration: none;
+        color: rgb(62, 214, 148);
+    }
+    
+    #notRegistered {
+        margin-top: 20px;
+    }
+    
+}
